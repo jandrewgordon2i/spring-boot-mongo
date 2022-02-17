@@ -33,7 +33,7 @@ public class StudentServiceApplication {
 	CommandLineRunner runner() {
 		return args -> {
 			List<Student> students = studentRepository.findAll();
-			if (students.size() == 3) {
+			if (students.size() > 0) {
 				LOGGER.info("Inserting Student data to DB");
 				studentRepository.saveAll(HelperUtil.studentDataSupplier.get());
 			} else {
