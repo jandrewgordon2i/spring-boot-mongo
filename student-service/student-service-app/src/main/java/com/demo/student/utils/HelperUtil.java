@@ -19,7 +19,7 @@ public class HelperUtil {
 
     public static Supplier<List<Student>> studentDataSupplier = () ->
             Arrays.asList(
-                    Student.builder().name("Student1").build(),
+                    Student.builder().name("Barbara").build(),
                     Student.builder().name("Student2").build(),
                     Student.builder().name("Student3").build(),
                     Student.builder().name("Student4").build(),
